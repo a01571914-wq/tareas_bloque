@@ -1,0 +1,33 @@
+
+Body
+{
+    color: #bfbec4;
+    background-color: rgba(2, 10, 11, 0.808);
+}
+  
+.Header
+{
+    color : #9e9da0;
+    background-color: azure;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Content
+{
+    color : #020203;
+    background-color: rgb(184, 207, 207);
+    border-radius: 2%;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+
+}
+
+.Footer
+{ 
+    color : #161617;
+    background-color: rgb(184, 207, 207);
+    font-size: 1.1em;
+   
+}
