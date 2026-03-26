@@ -229,8 +229,32 @@ class Game {
         for (let block of this.blocks) {
             if (!block.destroyed && boxOverlap(this.ball, block)) {
                 block.hit();
-                this.blocksDestroyed++;
-
+            
+                if (block.destroyed) {
+                    this.blocksDestroyed++;
+            
+                    if (Math.random() < 0.2) {
+                        let filaY = block.position.y;
+            
+                
+                        for (let b of this.blocks) {
+                            if (!b.destroyed && b.position.y === filaY) {
+                                b.color = "orange";
+                            }
+                        }
+            
+                        
+                        setTimeout(() => {
+                            for (let b of this.blocks) {
+                                if (!b.destroyed && b.position.y === filaY) {
+                                    b.destroyed = true;
+                                    this.blocksDestroyed++;
+                                }
+                            }
+                        }, 200); 
+                    }
+                }
+            
                 this.ball.velocity.y *= -1;
                 this.ping.play();
             }
@@ -286,6 +310,7 @@ function main() {
     game = new Game();
     drawScene(0);
 }
+
 
 function drawScene(newTime) {
     let deltaTime = newTime - oldTime;
