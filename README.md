@@ -1,1 +1,3 @@
 # tareas_bloque
+
+Basicamente el juego consiste en un breakout, toamando como inspiración el juego de pong se creo bloques, una paddle simple y una pelota, con esa pelota se pueden destruir los bloques, el juego cuenta con un total de 88 bloques, y se gana destruyendolos todos y si la pelota cae tienes 3 vidas para poder completar el juego, ahora hablando un  poco de los controles tienes basicamnete tu paddle y se mueve hacia la izquierda con la tecla A y hacia la derecha con la tecla D, y la mecanica agregada es que en momentos aleatorios le das a un bloque y asi se destruye la fila completa de ese bloque, de esta manera haciendo un juego mas rapido y que no se vuelva tedioso.
